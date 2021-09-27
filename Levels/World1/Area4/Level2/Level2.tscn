@@ -1,0 +1,154 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Levels/World1/Area4/Level2/Level2.gd" type="Script" id=1]
+[ext_resource path="res://Elements/Arrow/Arrow_CentripetalAndCentrifugalForce/Arrow1and2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Elements/Arrow/Arrow_Back/Arrow_Back.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Elements/Blocks/TileMaps/Obstacles/Obstacles.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Star/Star.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ball/ball.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Star/Satrs.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Elements/Blocks/Spines/Spine.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Elements/Blocks/SingleWay/SingleWay.tscn" type="PackedScene" id=9]
+
+[node name="Level2" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Obstacles" parent="." instance=ExtResource( 4 )]
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, 30, 0, 0, 31, 0, 0, 65536, 0, 0, 65567, 0, 0, 131072, 0, 0, 131103, 0, 0, 196608, 0, 0, 196639, 0, 0, 262144, 0, 0, 262175, 0, 0, 327680, 0, 0, 327711, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393239, 0, 0, 393240, 0, 0, 393241, 0, 0, 393242, 0, 0, 393243, 0, 0, 393244, 0, 0, 393245, 0, 0, 393246, 0, 0, 393247, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458759, 0, 0, 458760, 0, 0, 458775, 0, 0, 458776, 0, 0, 458781, 0, 0, 458782, 0, 0, 458783, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524295, 0, 0, 524296, 0, 0, 524311, 0, 0, 524312, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589831, 0, 0, 589832, 0, 0, 589847, 0, 0, 589848, 0, 0, 589853, 0, 0, 589854, 0, 0, 589855, 0, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655367, 0, 0, 655368, 0, 0, 655383, 0, 0, 655384, 0, 0, 655389, 0, 0, 655390, 0, 0, 655391, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720919, 0, 0, 720920, 0, 0, 720921, 0, 0, 720922, 0, 0, 720923, 0, 0, 720924, 0, 0, 720925, 0, 0, 720926, 0, 0, 720927, 0, 0, 786432, 0, 0, 786463, 0, 0, 851968, 0, 0, 851999, 0, 0, 917504, 0, 0, 917535, 0, 0, 983040, 0, 0, 983071, 0, 0, 1048576, 0, 0, 1048607, 0, 0, 1114112, 0, 0, 1114113, 0, 0, 1114114, 0, 0, 1114115, 0, 0, 1114116, 0, 0, 1114117, 0, 0, 1114118, 0, 0, 1114119, 0, 0, 1114120, 0, 0, 1114121, 0, 0, 1114122, 0, 0, 1114123, 0, 0, 1114124, 0, 0, 1114125, 0, 0, 1114126, 0, 0, 1114127, 0, 0, 1114128, 0, 0, 1114129, 0, 0, 1114130, 0, 0, 1114131, 0, 0, 1114132, 0, 0, 1114133, 0, 0, 1114134, 0, 0, 1114135, 0, 0, 1114136, 0, 0, 1114137, 0, 0, 1114138, 0, 0, 1114139, 0, 0, 1114140, 0, 0, 1114141, 0, 0, 1114142, 0, 0, 1114143, 0, 0 )
+
+[node name="Arrow_Back" parent="." instance=ExtResource( 3 )]
+position = Vector2( 640, 360 )
+
+[node name="Arrow1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 640, 160 )
+
+[node name="Arrow2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 640, 560 )
+
+[node name="Arrow3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 200, 360 )
+
+[node name="Arrow4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1080, 360 )
+
+[node name="SingleWays" type="Node2D" parent="."]
+
+[node name="SingleWay1" parent="SingleWays" instance=ExtResource( 9 )]
+position = Vector2( 940, 140 )
+scale = Vector2( 1, 5 )
+
+[node name="SingleWay2" parent="SingleWays" instance=ExtResource( 9 )]
+position = Vector2( 940, 580 )
+scale = Vector2( 1, 5 )
+
+[node name="SingleWay3" parent="SingleWays" instance=ExtResource( 9 )]
+position = Vector2( 340, 580 )
+rotation = 3.14159
+scale = Vector2( 1, 5 )
+
+[node name="SingleWay4" parent="SingleWays" instance=ExtResource( 9 )]
+position = Vector2( 340, 140 )
+rotation = 3.14159
+scale = Vector2( 1, 5 )
+
+[node name="Spines" type="Node2D" parent="."]
+
+[node name="Spine1" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 60, 60 )
+rotation = 1.5708
+
+[node name="Spine2" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 60, 100 )
+rotation = 1.5708
+
+[node name="Spine3" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 60, 140 )
+rotation = 1.5708
+
+[node name="Spine4" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 60, 180 )
+rotation = 1.5708
+
+[node name="Spine5" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 60, 220 )
+rotation = 1.5708
+
+[node name="Spine6" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 60, 500 )
+rotation = 1.5708
+
+[node name="Spine7" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 60, 540 )
+rotation = 1.5708
+
+[node name="Spine8" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 60, 580 )
+rotation = 1.5708
+
+[node name="Spine9" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 60, 620 )
+rotation = 1.5708
+
+[node name="Spine10" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 60, 660 )
+rotation = 1.5708
+
+[node name="Spine11" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 1220, 60 )
+rotation = 4.71239
+
+[node name="Spine12" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 1220, 100 )
+rotation = 4.71239
+
+[node name="Spine13" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 1220, 140 )
+rotation = 4.71239
+
+[node name="Spine14" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 1220, 180 )
+rotation = 4.71239
+
+[node name="Spine15" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 1220, 220 )
+rotation = 4.71239
+
+[node name="Spine16" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 1220, 500 )
+rotation = 4.71239
+
+[node name="Spine17" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 1220, 540 )
+rotation = 4.71239
+
+[node name="Spine18" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 1220, 580 )
+rotation = 4.71239
+
+[node name="Spine19" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 1220, 620 )
+rotation = 4.71239
+
+[node name="Spine20" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 1220, 660 )
+rotation = 4.71239
+
+[node name="Satrs" parent="." instance=ExtResource( 7 )]
+
+[node name="Star1" parent="Satrs" instance=ExtResource( 5 )]
+position = Vector2( 160, 160 )
+
+[node name="Star2" parent="Satrs" instance=ExtResource( 5 )]
+position = Vector2( 160, 560 )
+
+[node name="Star3" parent="Satrs" instance=ExtResource( 5 )]
+position = Vector2( 1120, 560 )
+
+[node name="Star4" parent="Satrs" instance=ExtResource( 5 )]
+position = Vector2( 1120, 160 )
+
+[node name="Ball" parent="." instance=ExtResource( 6 )]
+position = Vector2( 480, 360 )

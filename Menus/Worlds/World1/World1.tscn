@@ -1,0 +1,454 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Art/fonts/STXINWEI.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://Menus/Worlds/World.gd" type="Script" id=2]
+[ext_resource path="res://Menus/Worlds/LevelButton.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 1 )
+
+[node name="World1" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Areas" type="Node2D" parent="."]
+
+[node name="Area1" type="Node2D" parent="Areas"]
+position = Vector2( 0, 80 )
+
+[node name="Level1" type="Node2D" parent="Areas/Area1"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area1/Level1"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2" type="Node2D" parent="Areas/Area1"]
+position = Vector2( 160, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area1/Level2"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3" type="Node2D" parent="Areas/Area1"]
+position = Vector2( 320, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area1/Level3"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level4" type="Node2D" parent="Areas/Area1"]
+position = Vector2( 480, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area1/Level4"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level5" type="Node2D" parent="Areas/Area1"]
+position = Vector2( 640, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area1/Level5"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level6" type="Node2D" parent="Areas/Area1"]
+position = Vector2( 800, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area1/Level6"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level7" type="Node2D" parent="Areas/Area1"]
+position = Vector2( 960, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area1/Level7"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level8" type="Node2D" parent="Areas/Area1"]
+position = Vector2( 1120, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area1/Level8"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2" type="Node2D" parent="Areas"]
+position = Vector2( 120, 240 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Level1" type="Node2D" parent="Areas/Area2"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area2/Level1"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2" type="Node2D" parent="Areas/Area2"]
+position = Vector2( 160, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area2/Level2"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3" type="Node2D" parent="Areas/Area2"]
+position = Vector2( 320, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area2/Level3"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level4" type="Node2D" parent="Areas/Area2"]
+position = Vector2( 480, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area2/Level4"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level5" type="Node2D" parent="Areas/Area2"]
+position = Vector2( 640, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area2/Level5"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area3" type="Node2D" parent="Areas"]
+position = Vector2( 260, 400 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Level1" type="Node2D" parent="Areas/Area3"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area3/Level1"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2" type="Node2D" parent="Areas/Area3"]
+position = Vector2( 160, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area3/Level2"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3" type="Node2D" parent="Areas/Area3"]
+position = Vector2( 320, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area3/Level3"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level4" type="Node2D" parent="Areas/Area3"]
+position = Vector2( 480, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area3/Level4"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level5" type="Node2D" parent="Areas/Area3"]
+position = Vector2( 640, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area3/Level5"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area4" type="Node2D" parent="Areas"]
+position = Vector2( 400, 560 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Level1" type="Node2D" parent="Areas/Area4"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area4/Level1"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2" type="Node2D" parent="Areas/Area4"]
+position = Vector2( 160, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area4/Level2"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3" type="Node2D" parent="Areas/Area4"]
+position = Vector2( 320, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area4/Level3"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level4" type="Node2D" parent="Areas/Area4"]
+position = Vector2( 480, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area4/Level4"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level5" type="Node2D" parent="Areas/Area4"]
+position = Vector2( 640, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area4/Level5"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level6" type="Node2D" parent="Areas/Area4"]
+position = Vector2( 800, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area4/Level6"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Button" parent="."]
+margin_right = 180.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 2 )
+text = "返回"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Areas/Area1/Level1/StartButton" to="Areas/Area1/Level1" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area1/Level2/StartButton" to="Areas/Area1/Level2" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area1/Level3/StartButton" to="Areas/Area1/Level3" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area1/Level4/StartButton" to="Areas/Area1/Level4" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area1/Level5/StartButton" to="Areas/Area1/Level5" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area1/Level6/StartButton" to="Areas/Area1/Level6" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area1/Level7/StartButton" to="Areas/Area1/Level7" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area1/Level8/StartButton" to="Areas/Area1/Level8" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area2/Level1/StartButton" to="Areas/Area2/Level1" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area2/Level2/StartButton" to="Areas/Area2/Level2" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area2/Level3/StartButton" to="Areas/Area2/Level3" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area2/Level4/StartButton" to="Areas/Area2/Level4" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area2/Level5/StartButton" to="Areas/Area2/Level5" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area3/Level1/StartButton" to="Areas/Area3/Level1" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area3/Level2/StartButton" to="Areas/Area3/Level2" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area3/Level3/StartButton" to="Areas/Area3/Level3" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area3/Level4/StartButton" to="Areas/Area3/Level4" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area3/Level5/StartButton" to="Areas/Area3/Level5" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area4/Level1/StartButton" to="Areas/Area4/Level1" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area4/Level2/StartButton" to="Areas/Area4/Level2" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area4/Level3/StartButton" to="Areas/Area4/Level3" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area4/Level4/StartButton" to="Areas/Area4/Level4" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area4/Level5/StartButton" to="Areas/Area4/Level5" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area4/Level6/StartButton" to="Areas/Area4/Level6" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]

@@ -1,0 +1,127 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Levels/World1/Area2/Level4/Level4.gd" type="Script" id=1]
+[ext_resource path="res://ball/ball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Star/Satrs.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Star/Star.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Elements/Arrow/Arrow_CentripetalAndCentrifugalForce/Arrow1and2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Elements/Blocks/TileMaps/Obstacles/Obstacles.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Elements/Blocks/BounceBlock/BounceBlock.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Elements/Blocks/Spines/Spine.tscn" type="PackedScene" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+resource_local_to_scene = true
+extents = Vector2( 160, 20 )
+
+[node name="Level4" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Obstacles" parent="." instance=ExtResource( 6 )]
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, 30, 0, 0, 31, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 4, 0, 65561, 2, 0, 65562, 0, 0, 65563, 0, 0, 65564, 0, 0, 65565, 0, 0, 65566, 0, 0, 65567, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 4, 0, 131098, 2, 0, 131099, 0, 0, 131100, 0, 0, 131101, 0, 0, 131102, 0, 0, 131103, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 4, 0, 196635, 2, 0, 196636, 0, 0, 196637, 0, 0, 196638, 0, 0, 196639, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262172, 0, 0, 262173, 0, 0, 262174, 0, 0, 262175, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327708, 0, 0, 327709, 0, 0, 327710, 0, 0, 327711, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393225, 0, 0, 393244, 0, 0, 393245, 0, 0, 393246, 0, 0, 393247, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458761, 0, 0, 458780, 0, 0, 458781, 0, 0, 458782, 0, 0, 458783, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524297, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589833, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 589849, 0, 0, 589850, 0, 0, 589851, 0, 0, 589852, 0, 0, 589853, 0, 0, 589854, 0, 0, 589855, 0, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655369, 0, 0, 655388, 0, 0, 655389, 0, 0, 655390, 0, 0, 655391, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720905, 0, 0, 720924, 0, 0, 720925, 0, 0, 720926, 0, 0, 720927, 0, 0, 786432, 0, 0, 786433, 0, 0, 786434, 0, 0, 786435, 0, 0, 786460, 0, 0, 786461, 0, 0, 786462, 0, 0, 786463, 0, 0, 851968, 0, 0, 851969, 0, 0, 851970, 0, 0, 851971, 0, 0, 851996, 0, 0, 851997, 0, 0, 851998, 0, 0, 851999, 0, 0, 917504, 0, 0, 917505, 0, 0, 917506, 0, 0, 917507, 0, 0, 917508, 1, 0, 917531, 3, 0, 917532, 0, 0, 917533, 0, 0, 917534, 0, 0, 917535, 0, 0, 983040, 0, 0, 983041, 0, 0, 983042, 0, 0, 983043, 0, 0, 983044, 0, 0, 983045, 1, 0, 983066, 3, 0, 983067, 0, 0, 983068, 0, 0, 983069, 0, 0, 983070, 0, 0, 983071, 0, 0, 1048576, 0, 0, 1048577, 0, 0, 1048578, 0, 0, 1048579, 0, 0, 1048580, 0, 0, 1048581, 0, 0, 1048582, 1, 0, 1048601, 3, 0, 1048602, 0, 0, 1048603, 0, 0, 1048604, 0, 0, 1048605, 0, 0, 1048606, 0, 0, 1048607, 0, 0, 1114112, 0, 0, 1114113, 0, 0, 1114114, 0, 0, 1114115, 0, 0, 1114116, 0, 0, 1114117, 0, 0, 1114118, 0, 0, 1114119, 0, 0, 1114120, 0, 0, 1114121, 0, 0, 1114122, 0, 0, 1114123, 0, 0, 1114124, 0, 0, 1114125, 0, 0, 1114126, 0, 0, 1114127, 0, 0, 1114128, 0, 0, 1114129, 0, 0, 1114130, 0, 0, 1114131, 0, 0, 1114132, 0, 0, 1114133, 0, 0, 1114134, 0, 0, 1114135, 0, 0, 1114136, 0, 0, 1114137, 0, 0, 1114138, 0, 0, 1114139, 0, 0, 1114140, 0, 0, 1114141, 0, 0, 1114142, 0, 0, 1114143, 0, 0 )
+
+[node name="Ball" parent="." instance=ExtResource( 2 )]
+position = Vector2( 240, 460 )
+
+[node name="Arrow1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 560, 360 )
+
+[node name="Arrow2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 760, 200 )
+
+[node name="Arrow3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 760, 520 )
+
+[node name="Satrs" parent="." instance=ExtResource( 3 )]
+
+[node name="Star1" parent="Satrs" instance=ExtResource( 4 )]
+position = Vector2( 280, 160 )
+
+[node name="Star2" parent="Satrs" instance=ExtResource( 4 )]
+position = Vector2( 280, 560 )
+
+[node name="Star3" parent="Satrs" instance=ExtResource( 4 )]
+position = Vector2( 240, 360 )
+
+[node name="Star4" parent="Satrs" instance=ExtResource( 4 )]
+position = Vector2( 1040, 240 )
+
+[node name="Star5" parent="Satrs" instance=ExtResource( 4 )]
+position = Vector2( 1040, 480 )
+
+[node name="BounceBlock" parent="." instance=ExtResource( 7 )]
+position = Vector2( 235, 605 )
+rotation = 0.785398
+scale = Vector2( 0.9, 1 )
+
+[node name="AnimatedSprite" parent="BounceBlock" index="0"]
+animation = "1"
+
+[node name="CollisionShape2D" parent="BounceBlock" index="1"]
+shape = SubResource( 1 )
+
+[node name="BounceBlock4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1045, 115 )
+rotation = 3.92699
+scale = Vector2( 0.9, 1 )
+
+[node name="AnimatedSprite" parent="BounceBlock4" index="0"]
+animation = "1"
+
+[node name="CollisionShape2D" parent="BounceBlock4" index="1"]
+shape = SubResource( 1 )
+
+[node name="BounceBlock2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 235, 115 )
+rotation = 2.35619
+scale = Vector2( 0.9, 1 )
+
+[node name="AnimatedSprite" parent="BounceBlock2" index="0"]
+animation = "1"
+
+[node name="CollisionShape2D" parent="BounceBlock2" index="1"]
+shape = SubResource( 1 )
+
+[node name="BounceBlock3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1045, 605 )
+rotation = 5.49779
+scale = Vector2( 0.9, 1 )
+
+[node name="AnimatedSprite" parent="BounceBlock3" index="0"]
+animation = "1"
+
+[node name="CollisionShape2D" parent="BounceBlock3" index="1"]
+shape = SubResource( 1 )
+
+[node name="Spines" type="Node2D" parent="."]
+
+[node name="Spine1" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 420, 260 )
+rotation = 1.5708
+
+[node name="Spine2" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 420, 300 )
+rotation = 1.5708
+
+[node name="Spine3" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 420, 340 )
+rotation = 1.5708
+
+[node name="Spine4" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 420, 380 )
+rotation = 1.5708
+
+[node name="Spine5" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 420, 420 )
+rotation = 1.5708
+
+[node name="Spine6" parent="Spines" instance=ExtResource( 8 )]
+position = Vector2( 420, 460 )
+rotation = 1.5708
+
+[editable path="BounceBlock"]
+[editable path="BounceBlock4"]
+[editable path="BounceBlock2"]
+[editable path="BounceBlock3"]
