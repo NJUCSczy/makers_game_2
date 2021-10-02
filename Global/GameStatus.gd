@@ -3,8 +3,8 @@ extends Node
 var LevelStatus:Array=[             #0代表未解锁，1代表已解锁但未通过，2代表已通过但未完成额外目标，3代表完成额外目标
     [
         [1,0,0,0,0,0,0,0],                  #1_1
-        [0,0,0,0,0],                  #1_2
-        [0,0,0,0,0],                  #1_3
+        [0,0,0,0,0,0,0],                  #1_2
+        [0,0,0,0,0,0],                  #1_3
         [0,0,0,0,0,0]                   #1_4
        ],
     [
@@ -18,8 +18,8 @@ var LevelStatus:Array=[             #0代表未解锁，1代表已解锁但未�
 var LevelHasBounce:Array=[          #代表关卡是否有额外目标
     [
         [false,false,false,false,false,false,false,false],  #1_1
-        [false,false,false,false,false],  #1_2
-        [false,false,false,false,false],  #1_3
+        [false,false,false,false,false,false,false],  #1_2
+        [false,false,false,false,false,false],  #1_3
         [false,false,false,false,false,false]   #1_4
        ],
     [

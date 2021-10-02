@@ -8,4 +8,5 @@ func _ready():
 func _on_Star_body_entered(body):
     get_parent().get_star()
     hide()
-    call_deferred("queue_free")
+    set_deferred("monitoring",false)
+    set_deferred("monitorable",false)

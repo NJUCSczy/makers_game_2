@@ -11,7 +11,9 @@ func _ready():
     $Arrow1.init($Ball,15,2000)
     $Arrow2.init($Ball,15,2000)
     $Arrow3.init($Ball,15,2000)
+    
+    $AnimationPlayer.play("1")
     Ready=true
 
-
-
+func _on_AnimationPlayer_animation_finished(anim_name):
+    $AnimationPlayer.play("1")

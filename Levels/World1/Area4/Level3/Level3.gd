@@ -7,8 +7,7 @@ var LevelID=3
 
 
 func _ready():
-    Global.GameCamera.zoom=Vector2(1,1)*1.2
-    Global.get_node("LevelClearWindow").scale=Vector2(1,1)*1.2
+    Global.change_camera_zoom(1.2)
     $Obstacles.init(0,0,0)
     $Arrow_Back1.init($Ball)
     $Arrow_Back2.init($Ball)

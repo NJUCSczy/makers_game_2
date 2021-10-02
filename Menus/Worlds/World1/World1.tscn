@@ -18,7 +18,10 @@ script = ExtResource( 2 )
 [node name="Areas" type="Node2D" parent="."]
 
 [node name="Area1" type="Node2D" parent="Areas"]
-position = Vector2( 0, 80 )
+position = Vector2( 40, 80 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Level1" type="Node2D" parent="Areas/Area1"]
 script = ExtResource( 3 )
@@ -232,8 +235,40 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Level6" type="Node2D" parent="Areas/Area2"]
+position = Vector2( 800, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area2/Level6"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level7" type="Node2D" parent="Areas/Area2"]
+position = Vector2( 960, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area2/Level7"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Area3" type="Node2D" parent="Areas"]
-position = Vector2( 260, 400 )
+position = Vector2( 200, 400 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -317,8 +352,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Level6" type="Node2D" parent="Areas/Area3"]
+position = Vector2( 800, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StartButton" type="Button" parent="Areas/Area3/Level6"]
+margin_right = 80.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+text = "6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Area4" type="Node2D" parent="Areas"]
-position = Vector2( 400, 560 )
+position = Vector2( 200, 560 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -440,11 +491,14 @@ __meta__ = {
 [connection signal="pressed" from="Areas/Area2/Level3/StartButton" to="Areas/Area2/Level3" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Areas/Area2/Level4/StartButton" to="Areas/Area2/Level4" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Areas/Area2/Level5/StartButton" to="Areas/Area2/Level5" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area2/Level6/StartButton" to="Areas/Area2/Level6" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area2/Level7/StartButton" to="Areas/Area2/Level7" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Areas/Area3/Level1/StartButton" to="Areas/Area3/Level1" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Areas/Area3/Level2/StartButton" to="Areas/Area3/Level2" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Areas/Area3/Level3/StartButton" to="Areas/Area3/Level3" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Areas/Area3/Level4/StartButton" to="Areas/Area3/Level4" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Areas/Area3/Level5/StartButton" to="Areas/Area3/Level5" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Areas/Area3/Level6/StartButton" to="Areas/Area3/Level6" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Areas/Area4/Level1/StartButton" to="Areas/Area4/Level1" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Areas/Area4/Level2/StartButton" to="Areas/Area4/Level2" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="Areas/Area4/Level3/StartButton" to="Areas/Area4/Level3" method="_on_StartButton_pressed"]

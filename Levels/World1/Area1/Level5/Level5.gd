@@ -6,6 +6,7 @@ var AreaID=1
 var LevelID=5
 
 func _ready():
+    Global.change_camera_zoom(1.2)
     $Obstacles.init(0,0,0)
     $Arrow1.init($Ball,15,2000)
     $Arrow2.init($Ball,15,2000)
