@@ -31,7 +31,9 @@ margin_left = -140.0
 margin_top = -140.0
 margin_right = 140.0
 margin_bottom = 140.0
+focus_mode = 0
 custom_fonts/font = SubResource( 1 )
+enabled_focus_mode = 0
 text = "World1"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -63,7 +65,9 @@ margin_left = -140.0
 margin_top = -140.0
 margin_right = 140.0
 margin_bottom = 140.0
+focus_mode = 0
 custom_fonts/font = SubResource( 1 )
+enabled_focus_mode = 0
 text = "World2"
 __meta__ = {
 "_edit_use_anchors_": false

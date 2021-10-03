@@ -13,7 +13,10 @@ func _on_BackButton_pressed():
     
 func _on_World1Button_pressed():
     Global.goto_world_scene(1)
+    $Worlds/World1/World1Button.button_mask=0
     
 func _on_World2Button_pressed():
     if GameStatus.getLevelStatus(2):
         Global.goto_world_scene(2)
+        $Worlds/World2/World2Button.button_mask=0
+    

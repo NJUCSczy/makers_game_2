@@ -3,7 +3,7 @@ extends Node2D
 var Ready=false
 var WorldID=1
 var AreaID=1
-var LevelID=7
+var LevelID=8
 
 func _ready():
     Global.change_camera_zoom(1.2)
