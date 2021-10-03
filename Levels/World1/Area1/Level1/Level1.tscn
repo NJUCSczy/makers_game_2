@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Levels/World1/Area1/Level1/Level1.gd" type="Script" id=1]
 [ext_resource path="res://ball/ball.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Star/Satrs.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Star/Star.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Elements/Arrow/Arrow_CentripetalAndCentrifugalForce/Arrow1and2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Elements/Weather/WindFixed/WindFixed.tscn" type="PackedScene" id=7]
 
 [node name="Level1" type="Node2D"]
 position = Vector2( 128, 72 )
@@ -24,3 +25,6 @@ position = Vector2( 720, 360 )
 
 [node name="Star1" parent="Satrs" instance=ExtResource( 5 )]
 position = Vector2( 920, 360 )
+
+[node name="WindFixed" parent="." instance=ExtResource( 7 )]
+position = Vector2( 352, 468 )

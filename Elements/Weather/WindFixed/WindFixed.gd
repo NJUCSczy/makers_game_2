@@ -4,46 +4,43 @@ var Ball=null
 var ForceLevel
 var MouseInArea=false
 var BallInArea=false
-var Pressed=false
-var Direction:Vector2=Vector2()
+var Enable:bool
 
-func init(_Ball,_ForceLevel:int):
+func init(_Ball,_Direction:Vector2,_ForceLevel:int):
     Ball=_Ball
     ForceLevel=_ForceLevel
-    $EffectArea.modulate.a=0
+    $EffectArea.rotation=_Direction.angle()
+    $EffectArea.hide()
+    Enable=false
 
 func _physics_process(delta):
     if Ball==null:
         return
-    if Pressed and BallInArea:
+    if Enable and BallInArea:
         var collision=get_world_2d().direct_space_state.intersect_ray(global_position,Ball.global_position,[self,Ball],0b1)
         if !collision:
             function()
         else:
             Ball.AcceleratedSpeed[self]=Vector2()
     else:
-            Ball.AcceleratedSpeed[self]=Vector2()
-    test_collision()
-    
+        Ball.AcceleratedSpeed[self]=Vector2()
+        
 func _input(event):
     if event is InputEventMouseButton:
-        if event.button_index == BUTTON_LEFT:
-            if event.is_pressed():
-                if MouseInArea and !Pressed:
-                    Pressed=true
-                    $EffectArea.modulate.a=1
+        if event.button_index == BUTTON_LEFT and event.is_pressed() and MouseInArea:
+            if Enable:
+                Enable=false
+                $EffectArea.hide()
             else:
-                if Pressed:
-                    $EffectArea.modulate.a=0
-                    Pressed=false
+                Enable=true
+                $EffectArea.show()
+                test_collision()
 
 func test_collision():
-    var MousePos=get_viewport().get_mouse_position()*Global.GameCamera.zoom
-    $EffectArea.rotation=(MousePos-global_position).angle()
     var Corner=$EffectArea/CollisionShape2D.shape.extents.y*Vector2(cos(PI/2+$EffectArea.rotation),sin(PI/2+$EffectArea.rotation))
     var SpaceStatus = get_world_2d().direct_space_state#获取2D空间，准备发射碰撞检测射线
-    var collision1=SpaceStatus.intersect_ray(Corner+global_position,Corner+global_position+(MousePos-global_position).normalized()*5000,[self,Ball],0b1)
-    var collision2=SpaceStatus.intersect_ray(-Corner+global_position,-Corner+global_position+(MousePos-global_position).normalized()*5000,[self,Ball],0b1)
+    var collision1=SpaceStatus.intersect_ray(Corner+global_position,Corner+global_position+Vector2(cos($EffectArea.rotation),sin($EffectArea.rotation)).normalized()*5000,[self,Ball],0b1)
+    var collision2=SpaceStatus.intersect_ray(-Corner+global_position,-Corner+global_position+Vector2(cos($EffectArea.rotation),sin($EffectArea.rotation)).normalized()*5000,[self,Ball],0b1)
     if collision1 and collision2:
         var CollisionLength=max((collision1.position-global_position).length(),(collision2.position-global_position).length())
         $EffectArea/AnimatedSprite.scale.x=CollisionLength/80

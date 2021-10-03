@@ -9,6 +9,7 @@ func _ready():
     Global.change_camera_zoom(1.2)
     $Obstacles.init(0,0,0)
     $Arrow1and2.init($Ball,15,2000)
+    $WindFixed.init($Ball,Vector2(1,-1),15)
     Ready=true
 
 
